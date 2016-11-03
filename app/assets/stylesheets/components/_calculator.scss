@@ -1,0 +1,100 @@
+.biggie-btn {
+  font-size: 50px;
+  height: 100px;
+  width: 100px;
+}
+
+.operator-btn {
+  background-color: $greyed-out;
+  border-color: $greyed-out;
+  color: $whitey-white;
+}
+
+.operator-btn:focus {
+  background-color: $very-black;
+  border-color: $very-black;
+  color: $whitey-white;
+}
+
+.operator-btn:hover {
+  background-color: $very-black;
+  border-color: $very-black;
+  color: $whitey-white;
+}
+
+.biggie-clear {
+  background-color: $very-orange;
+  float: right;
+  font-size: 24px;
+  height: 100px;
+  width: 100px;
+}
+
+.biggie-form {
+  border-color: $greyed-out;
+  border-radius: 4px;
+  border-style: solid;
+  border-width: thin;
+  font-size: 44px;
+  height: 100px;
+  // margin-bottom: -20px;
+  padding-right: 10px;
+  position: relative;
+  width: 430px;
+}
+
+.calculatorcontainer {
+  margin-left: auto;
+  margin-right: auto;
+  // margin-top: -30px;
+  text-align: center;
+  width: 430px;
+}
+
+.calculator-row {
+  margin-top: 10px;
+  .btn {
+    margin-right: 5px;
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 699px) and (min-width: 220px) {
+  .calculatorcontainer {
+    width: 310px;
+  }
+
+  .biggie-form {
+    width: 310px;
+  }
+
+  .biggie-btn {
+    font-size: 40px;
+    height: 70px;
+    width: 70px;
+  }
+
+  .biggie-clear {
+    float: left;
+    height: 70px;
+    width: 310px !important;
+  }
+}
+
+video {
+  background: url('tree.png') no-repeat;
+  background-size: cover;
+  height: auto;
+  left: 50%;
+  min-height: 100%;
+  min-width: 100%;
+  opacity: 0.25;
+  position: fixed;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  transition: 1s opacity;
+  width: auto;
+  z-index: -100;
+}

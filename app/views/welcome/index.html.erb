@@ -1,0 +1,40 @@
+<%= render("shared/navbar") %>
+<video poster="trees.png" id="bgvid" playsinline autoplay muted loop>
+<source src="trees.mp4" type="video/mp4">
+</video>
+<div class="container">
+    <div class="calculatorcontainer">
+      <form name=calcform>
+        <div class="calculator-row form-group">
+          <input type=text class="biggie-form" name=txt1 id=txt1 style="text-align:right">
+        </div>
+        <div class="calculator-row">
+          <input type=button class="btn btn-secondary biggie-btn" name=btn9 value=9 onclick="displynum(btn9.value)">
+          <input type=button class="btn btn-secondary biggie-btn" name=btn8 value=8 onclick="displynum(btn8.value)">
+          <input type=button class="btn btn-secondary biggie-btn" name=btn7 value=7 onclick="displynum(btn7.value)">
+          <input type=button class="btn btn-outline-primary biggie-btn operator-btn" name=addbtn value=+ onclick="displynum(addbtn.value)">
+        </div>
+        <div class="calculator-row">
+          <input type=button class="btn btn-secondary biggie-btn" name=btn6 value=6 onclick="displynum(btn6.value)">
+          <input type=button class="btn btn-secondary biggie-btn" name=btn5 value=5 onclick="displynum(btn5.value)">
+          <input type=button class="btn btn-secondary biggie-btn" name=btn4 value=4 onclick="displynum(btn4.value)">
+          <input type=button class="btn btn-outline-primary biggie-btn operator-btn" name=subbtn value=- onclick="displynum(subbtn.value)">
+        </div>
+        <div class="calculator-row">
+          <input type=button class="btn btn-secondary biggie-btn" name=btn3 value=3 onclick="displynum(btn3.value)">
+          <input type=button class="btn btn-secondary biggie-btn" name=btn2 value=2 onclick="displynum(btn2.value)">
+          <input type=button class="btn btn-secondary biggie-btn" name=btn1 value=1 onclick="displynum(btn1.value)">
+          <input type=button class="btn btn-outline-primary biggie-btn operator-btn" name=multbtn value=* onclick="displynum(multbtn.value)">
+        </div>
+        <div class="calculator-row">
+          <input type=button class="btn btn-secondary biggie-btn" name=btn0 value=0 onclick="displynum(btn0.value)">
+          <input type=button class="btn btn-secondary biggie-btn" name=potbtn value=. onclick="displynum(potbtn.value)">
+          <input type=button class="btn btn-secondary biggie-btn" name=eqlbtn value== onclick="txt1.value=eval(txt1.value)">
+          <input type=button class="btn btn-outline-primary biggie-btn operator-btn" name=divbtn value=/ onclick="displynum(divbtn.value)">
+        </div>
+        <div class="calculator-row float-xs-right">
+          <button type="button" class="btn btn-outline-primary biggie-btn operator-btn biggie-clear" onclick="ClearFields();">Clear</button>
+        </div>
+      </form>
+    </div>
+</div>

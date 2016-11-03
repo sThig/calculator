@@ -1,6 +1,6 @@
 <%= render("shared/navbar") %>
-<video poster="trees.png" id="bgvid" playsinline autoplay muted loop>
-<source src="trees.mp4" type="video/mp4">
+<video poster="<%= asset_url('trees.png') %>" id="bgvid" playsinline autoplay muted loop>
+<source src="<%= asset_url('trees.mp4') %>" type="video/mp4">
 </video>
 <div class="container">
     <div class="calculatorcontainer">
